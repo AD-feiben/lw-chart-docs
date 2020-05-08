@@ -113,7 +113,8 @@ module.exports = {
     [
       'run',
       {
-        jsLabs: ['https://www.fedevelop.cn/lw-chart/dist/Area.js']
+        jsLabs: ['https://www.fedevelop.cn/lw-chart/dist/Area.js'],
+        isHideHeader: true
       }
     ]
   ],

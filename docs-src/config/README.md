@@ -7,7 +7,7 @@ prev:  /guide/
 
 ## 了解 Canvas 布局
 
-::: run
+::: run { title: 'Canvas 布局' }
 ```vue
 <template>
   <div>

@@ -10,7 +10,7 @@ prev: /config/
 
 ## 单线条
 
-::: run
+::: run { title: '单线条' }
 ```vue
 <template>
   <div>
@@ -67,7 +67,7 @@ export default {
 
 ## 单线条 (控制坐标标注)
 
-::: run
+::: run { title: '单线条 (控制坐标标注)' }
 ```vue
 <template>
   <div>
@@ -134,7 +134,7 @@ yAxisLength: 5,
 
 ## 单线条（无指示点）
 
-::: run
+::: run { title: '单线条（无指示点）' }
 ```vue
 <template>
   <div>
@@ -196,7 +196,7 @@ areaShowDot: false
 
 ## 单线条（无动画）
 
-::: run
+::: run { title: '单线条（无动画）' }
 ```vue
 <template>
   <div>
@@ -258,7 +258,7 @@ showAnimation: false
 
 ## 单线条（修改颜色）
 
-::: run
+::: run  { title: '单线条（修改颜色）' }
 ```vue
 <template>
   <div>
@@ -324,7 +324,7 @@ export default {
 
 ## 多线条
 
-::: run
+::: run { title: '多线条' }
 ```vue
 <template>
   <div>
@@ -394,7 +394,7 @@ areaActiveDotFillColor: ['rgba(255, 71, 87,0.3)', 'rgba(46, 213, 115,0.3)']
 
 ## 渐变区域
 
-::: run
+::: run { title: '渐变区域' }
 ```vue
 <template>
   <div>
@@ -455,7 +455,7 @@ areaEndColor: ['rgba(255, 71, 87,0.1)']
 
 ## 区域叠加
 
-::: run
+::: run { title: '区域叠加' }
 ```vue
 <template>
   <div>
@@ -525,7 +525,7 @@ areaEndColor: ['rgba(255, 107, 129,1.0)', 'rgba(236, 204, 104,1.0)']
 
 ## 自定义 result
 
-::: run
+::: run { title: '自定义 result' }
 ```vue
 <template>
   <div>
