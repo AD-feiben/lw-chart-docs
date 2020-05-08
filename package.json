@@ -1,0 +1,22 @@
+{
+  "name": "lw-chart-doc",
+  "version": "1.0.0",
+  "description": "Document of lw-chart",
+  "main": "index.js",
+  "scripts": {
+    "docs:deploy": "./deploy-docs.sh",
+    "docs:dev": "vuepress dev docs-src",
+    "docs:build": "vuepress build docs-src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.4.1",
+    "vuepress": "^1.4.1"
+  },
+  "dependencies": {
+    "vuepress-plugin-run": "^1.0.1"
+  }
+}
