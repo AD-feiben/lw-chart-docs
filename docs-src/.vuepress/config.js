@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/lw-chart-docs/',
+  base: '/lw-chart-docs/docs/',
   locales: {
     '/': {
       lang: 'zh-CN',
