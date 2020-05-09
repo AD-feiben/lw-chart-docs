@@ -8,6 +8,7 @@ npm run docs:build
 
 rm -rf docs
 
+cp -rf ~/test/lightweight-chart/dist lw-chart-docs/dist/
 cp -rf docs-src/.vuepress/dist lw-chart-docs/docs/
 mv docs-src/.vuepress/dist docs
 
