@@ -11,8 +11,6 @@ lw-chart 使用 TypeScript 编写，npm 包中提供了 d.ts 的声明文件，�
 
 当然了，lw-chart 不受限于前端框架，对任意前端项目均可支持。
 
-```
-
 npm 包的目录结构如下如下：
 
 ```bash
