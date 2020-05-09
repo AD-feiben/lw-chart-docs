@@ -114,7 +114,7 @@ module.exports = {
       'run',
       {
         jsLabs: ['https://lw-chart-docs.now.sh/lw-chart-docs/dist/Area.js'],
-        isHideHeader: true
+        reverse: true,
       }
     ]
   ],

@@ -26,16 +26,16 @@ export default {
       const yAxisData = [ [ 7, 10, 6, 8, 12, 7 ] ];
       const config = {
         title: '单线条',
-        titleBarHeight: 50,
+        titleBarHeight: 30,
         canvasBg: '#f1f2f6',
-        canvasPadding: [30],
+        canvasPadding: [20],
         chartPadding: [10],
         axisStyle: {
           size: 14,
           lineColor: '#a4b0be'
         },
-        xAxisHeight: 50,
-        yAxisWidth: 50,
+        xAxisHeight: 30,
+        yAxisWidth: 38,
         yAxisFormat: (val) => {
           return val.toFixed(2);
         },
@@ -57,7 +57,7 @@ export default {
 </script>
 <style>
   .chart {
-    width: 500px;
+    width: 100%;
     height: 500px;
   }
 </style>
@@ -83,16 +83,16 @@ export default {
       const yAxisData = [ [ 7, 10, 6, 8, 12, 7 ] ];
       const config = {
         title: '单线条 (控制坐标标注)',
-        titleBarHeight: 50,
+        titleBarHeight: 30,
         canvasBg: '#f1f2f6',
-        canvasPadding: [30],
+        canvasPadding: [20],
         chartPadding: [10],
         axisStyle: {
           size: 14,
           lineColor: '#a4b0be'
         },
-        xAxisHeight: 50,
-        yAxisWidth: 50,
+        xAxisHeight: 30,
+        yAxisWidth: 38,
 
         xAxisLength: 3,
         yAxisLength: 5,
@@ -118,7 +118,7 @@ export default {
 </script>
 <style>
   .chart {
-    width: 500px;
+    width: 100%;
     height: 500px;
   }
 </style>
@@ -150,16 +150,16 @@ export default {
       const yAxisData = [ [ 7, 10, 6, 8, 12, 7 ] ];
       const config = {
         title: '单线条（无指示点）',
-        titleBarHeight: 50,
+        titleBarHeight: 30,
         canvasBg: '#f1f2f6',
-        canvasPadding: [30],
+        canvasPadding: [20],
         chartPadding: [10],
         axisStyle: {
           size: 14,
           lineColor: '#a4b0be'
         },
-        xAxisHeight: 50,
-        yAxisWidth: 50,
+        xAxisHeight: 30,
+        yAxisWidth: 38,
         yAxisFormat: (val) => {
           return val.toFixed(2);
         },
@@ -183,7 +183,7 @@ export default {
 </script>
 <style>
   .chart {
-    width: 500px;
+    width: 100%;
     height: 500px;
   }
 </style>
@@ -212,16 +212,16 @@ export default {
       const yAxisData = [ [ 7, 10, 6, 8, 12, 7 ] ];
       const config = {
         title: '单线条（无动画）',
-        titleBarHeight: 50,
+        titleBarHeight: 30,
         canvasBg: '#f1f2f6',
-        canvasPadding: [30],
+        canvasPadding: [20],
         chartPadding: [10],
         axisStyle: {
           size: 14,
           lineColor: '#a4b0be'
         },
-        xAxisHeight: 50,
-        yAxisWidth: 50,
+        xAxisHeight: 30,
+        yAxisWidth: 38,
         yAxisFormat: (val) => {
           return val.toFixed(2);
         },
@@ -245,7 +245,7 @@ export default {
 </script>
 <style>
   .chart {
-    width: 500px;
+    width: 100%;
     height: 500px;
   }
 </style>
@@ -274,16 +274,16 @@ export default {
       const yAxisData = [ [ 7, 10, 6, 8, 12, 7 ] ];
       const config = {
         title: '单线条（修改颜色）',
-        titleBarHeight: 50,
+        titleBarHeight: 30,
         canvasBg: '#f1f2f6',
-        canvasPadding: [30],
+        canvasPadding: [20],
         chartPadding: [10],
         axisStyle: {
           size: 14,
           lineColor: '#a4b0be'
         },
-        xAxisHeight: 50,
-        yAxisWidth: 50,
+        xAxisHeight: 30,
+        yAxisWidth: 38,
         yAxisFormat: (val) => {
           return val.toFixed(2);
         },
@@ -309,7 +309,7 @@ export default {
 </script>
 <style>
   .chart {
-    width: 500px;
+    width: 100%;
     height: 500px;
   }
 </style>
@@ -340,16 +340,16 @@ export default {
       const yAxisData = [ [ 7, 10, 6, 8, 12, 7 ], [ 2, 5, 3, 6, 8, 5 ] ];
       const config = {
         title: '多线条',
-        titleBarHeight: 50,
+        titleBarHeight: 30,
         canvasBg: '#f1f2f6',
-        canvasPadding: [30],
+        canvasPadding: [20],
         chartPadding: [10],
         axisStyle: {
           size: 14,
           lineColor: '#a4b0be'
         },
-        xAxisHeight: 50,
-        yAxisWidth: 50,
+        xAxisHeight: 30,
+        yAxisWidth: 38,
         yAxisFormat: (val) => {
           return val.toFixed(2);
         },
@@ -376,7 +376,7 @@ export default {
 </script>
 <style>
   .chart {
-    width: 500px;
+    width: 100%;
     height: 500px;
   }
 </style>
@@ -410,16 +410,16 @@ export default {
       const yAxisData = [ [ 7, 10, 6, 8, 12, 7 ] ];
       const config = {
         title: '渐变区域',
-        titleBarHeight: 50,
+        titleBarHeight: 30,
         canvasBg: '#f1f2f6',
-        canvasPadding: [30],
+        canvasPadding: [20],
         chartPadding: [10],
         axisStyle: {
           size: 14,
           lineColor: '#a4b0be'
         },
-        xAxisHeight: 50,
-        yAxisWidth: 50,
+        xAxisHeight: 30,
+        yAxisWidth: 38,
         yAxisFormat: (val) => {
           return val.toFixed(2);
         },
@@ -441,7 +441,7 @@ export default {
 </script>
 <style>
   .chart {
-    width: 500px;
+    width: 100%;
     height: 500px;
   }
 </style>
@@ -471,16 +471,16 @@ export default {
       const yAxisData = [ [ 7, 10, 6, 8, 12, 7 ], [ 2, 5, 3, 6, 8, 5 ] ];
       const config = {
         title: '区域叠加',
-        titleBarHeight: 50,
+        titleBarHeight: 30,
         canvasBg: '#f1f2f6',
-        canvasPadding: [30],
+        canvasPadding: [20],
         chartPadding: [10],
         axisStyle: {
           size: 14,
           lineColor: '#a4b0be'
         },
-        xAxisHeight: 50,
-        yAxisWidth: 50,
+        xAxisHeight: 30,
+        yAxisWidth: 38,
         yAxisFormat: (val) => {
           return val.toFixed(2);
         },
@@ -505,7 +505,7 @@ export default {
 </script>
 <style>
   .chart {
-    width: 500px;
+    width: 100%;
     height: 500px;
   }
 </style>
@@ -541,16 +541,16 @@ export default {
       const yAxisData = [ [ 7, 10, 6, 8, 12, 7 ] ];
       const config = {
         title: '自定义 result',
-        titleBarHeight: 50,
+        titleBarHeight: 30,
         canvasBg: '#f1f2f6',
-        canvasPadding: [30],
+        canvasPadding: [20],
         chartPadding: [10],
         axisStyle: {
           size: 14,
           lineColor: '#a4b0be'
         },
-        xAxisHeight: 50,
-        yAxisWidth: 50,
+        xAxisHeight: 30,
+        yAxisWidth: 38,
         yAxisFormat: (val) => {
           return val.toFixed(2);
         },
@@ -599,7 +599,7 @@ export default {
 </script>
 <style>
   .chart {
-    width: 500px;
+    width: 100%;
     height: 500px;
   }
 </style>
