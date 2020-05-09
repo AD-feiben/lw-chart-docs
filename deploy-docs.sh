@@ -8,6 +8,6 @@ npm run docs:build
 
 rm -rf docs
 
-cp -rf docs-src/.vuepress/dist lw-chart-docs/
+cp -rf docs-src/.vuepress/dist lw-chart-docs/docs/
 mv docs-src/.vuepress/dist docs
 
