@@ -37,18 +37,6 @@ next:  /demo/
 `areaStartColor` 和 `areaEndColor` 可用于区域填充颜色，颜色从上到下渐变。
 
 
-`IData` 类型定义如下
-
-|   参数   |             描述              |  类型  |
-| -------- | ----------------------------- | ------ |
-| group    | 选中的数据在 yAxisData 的索引 | number |
-| xAxisVal | x 坐标值                      | string |
-| yAxisVal | y 坐标值                      | number |
-| x | x 坐标, 已乘以 dpi                      | number |
-| y | y 坐标, 已乘以 dpi                       | number |
-
-
-
 
 
 `resultStyle` 默认值 `defaultResultStyle` 如下
@@ -69,6 +57,19 @@ next:  /demo/
 this.ctx.textBaseline = 'top';
 this.ctx.textAlign = 'end';
 ```
+
+
+
+
+`IData` 类型定义如下
+
+|   参数   |             描述              |  类型  |
+| -------- | ----------------------------- | ------ |
+| group    | 选中的数据在 yAxisData 的索引 | number |
+| xAxisVal | x 坐标值                      | string |
+| yAxisVal | y 坐标值                      | number |
+| x | x 坐标, 已乘以 dpi                      | number |
+| y | y 坐标, 已乘以 dpi                       | number |
 
 
 `LWChartParameter` 类型定义如下：
