@@ -559,17 +559,16 @@ export default {
         areaStartColor: ['rgba(0,0,0,0)'],
         areaEndColor: ['rgba(0,0,0,0)'],
 
-        drawResult: function (ctx, data) {
+        drawResult: function (ctx, data, dpi) {
           const { group, xAxisVal, yAxisVal } = data;
           const text = `第${group + 1}组数据: ${xAxisVal}-${yAxisVal}`;
-          // this 为 Area 实例
-          const size = 14 * this.dpi;
+          const size = 14 * dpi
           const weight = 600;
           const font = 'PingFangSC-Semibold PingFang SC';
           const color = '#333';
-          const x = 400 * this.dpi;
-          const y = 30 * this.dpi;
-          const maxWidth = 120 * this.dpi;
+          const x = 400 * dpi
+          const y = 30 * dpi
+          const maxWidth = 120 * dpi
           ctx.save();
           ctx.textBaseline = 'top';
           ctx.textAlign = 'end';
@@ -601,17 +600,17 @@ export default {
 
 
 ```ts
-drawResult: function (ctx, data) {
+drawResult: function (ctx, data, dpi) {
+  // dpi v1.0.7 生效
   const { group, xAxisVal, yAxisVal } = data;
   const text = `第${group + 1}组数据: ${xAxisVal}-${yAxisVal}`;
-  // this 为 Area 实例
-  const size = 14 * this.dpi;
+  const size = 14 * dpi
   const weight = 600;
   const font = 'PingFangSC-Semibold PingFang SC';
   const color = '#333';
-  const x = 400 * this.dpi;
-  const y = 30 * this.dpi;
-  const maxWidth = 120 * this.dpi;
+  const x = 400 * dpi
+  const y = 30 * dpi
+  const maxWidth = 120 * dpi
   ctx.save();
   ctx.textBaseline = 'top';
   ctx.textAlign = 'end';

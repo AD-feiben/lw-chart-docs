@@ -24,7 +24,7 @@ next: /demo/
 | areaActiveDotRadius    | 激活指示点半径，在原指示点上叠加 | number                                                | 8                          |
 | areaActiveDotFillColor | 激活指示点颜色                   | string[]                                              | ['rgba(233, 28, 65, 0.3)'] |
 | showResult             | 是否显示选中的数据信息           | boolean                                               | true                       |
-| drawResult             | 自定义绘制选中的数据信息         | (ctx: CanvasRenderingContext2D, data: IData) => void; | --                         |
+| drawResult             | 自定义绘制选中的数据信息         | (ctx: CanvasRenderingContext2D, dpi: number, data: IData) => void; | --                         |
 | resultFormat           | 选中数据格式化后绘制             | (data: IData) => string;                              | --                         |
 | resultStyle            | 绘制选中信息的样式               | LWChartTextStyle                                      | defaultResultStyle         |
 | showAnimation          | 是否显示动画                     | boolean                                               | true                       |
@@ -73,16 +73,13 @@ this.ctx.textAlign = 'end';
 
 :::tip drawResult 使用方法
 
-drawResult 为自定义绘制选中数据样式。 **drawResult 应避免使用箭头函数，因为无法使用 `this` 获取不了 Area 实例。** 使用方法如下：
+drawResult 为自定义绘制选中数据样式。使用方法如下：
 
 ```ts
 new Area(el, {
   title: '',
-  drawResult: function (ctx, data) {
-    /**
-     * this 为 Area 实例，可以获取公共属性
-     * 位置及尺寸参数需要乘以 this.dpi
-     */
+  drawResult: function (ctx, data, dpi) {
+    // 位置及尺寸参数需要乘以 dpi
     ctx.save();
     // do something
     ctx.restore();
