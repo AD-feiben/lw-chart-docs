@@ -559,19 +559,27 @@ export default {
         areaStartColor: ['rgba(0,0,0,0)'],
         areaEndColor: ['rgba(0,0,0,0)'],
 
-        drawResult: function (ctx, data, dpi) {
-          const { group, xAxisVal, yAxisVal } = data;
+        drawResult: function (ctx, data, chartParameter) {
+          const { dpi, mousePosition, chartRect } = chartParameter;
+          const { group, xAxisVal, yAxisVal, y } = data;
           const text = `第${group + 1}组数据: ${xAxisVal}-${yAxisVal}`;
           const size = 14 * dpi
           const weight = 600;
           const font = 'PingFangSC-Semibold PingFang SC';
           const color = '#333';
-          const x = 400 * dpi
-          const y = 30 * dpi
-          const maxWidth = 120 * dpi
+          const offsetX = 20 * dpi;
+          const maxWidth = 120 * dpi;
+
+          let textAlign = 'start';
+          let x = mousePosition.x + offsetX;
+          if (mousePosition.x + maxWidth + offsetX >= chartRect.endX) {
+            textAlign = 'end'
+            x = mousePosition.x - offsetX;
+          }
+
           ctx.save();
-          ctx.textBaseline = 'top';
-          ctx.textAlign = 'end';
+          ctx.textBaseline = 'middle';
+          ctx.textAlign = textAlign;
           ctx.font = `${weight} ${size}px ${font}`;
           ctx.fillStyle = color;
           ctx.fillText(text, x, y, maxWidth);
@@ -600,20 +608,27 @@ export default {
 
 
 ```ts
-drawResult: function (ctx, data, dpi) {
-  // dpi v1.0.7 生效
-  const { group, xAxisVal, yAxisVal } = data;
+drawResult: function (ctx, data, chartParameter) {
+  const { dpi, mousePosition, chartRect } = chartParameter;
+  const { group, xAxisVal, yAxisVal, y } = data;
   const text = `第${group + 1}组数据: ${xAxisVal}-${yAxisVal}`;
   const size = 14 * dpi
   const weight = 600;
   const font = 'PingFangSC-Semibold PingFang SC';
   const color = '#333';
-  const x = 400 * dpi
-  const y = 30 * dpi
-  const maxWidth = 120 * dpi
+  const offsetX = 20 * dpi;
+  const maxWidth = 120 * dpi;
+
+  let textAlign = 'start';
+  let x = mousePosition.x + offsetX;
+  if (mousePosition.x + maxWidth + offsetX >= chartRect.endX) {
+    textAlign = 'end'
+    x = mousePosition.x - offsetX;
+  }
+
   ctx.save();
-  ctx.textBaseline = 'top';
-  ctx.textAlign = 'end';
+  ctx.textBaseline = 'middle';
+  ctx.textAlign = textAlign;
   ctx.font = `${weight} ${size}px ${font}`;
   ctx.fillStyle = color;
   ctx.fillText(text, x, y, maxWidth);
