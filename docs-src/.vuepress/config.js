@@ -13,11 +13,11 @@ module.exports = {
     // }
   },
   head: [
-    ['link', { rel: 'icon', href: '/imgs/lw-chart.png' }]
+    ['link', { rel: 'icon', href: '/imgs/lw-chart.svg' }]
   ],
   themeConfig: {
     smoothScroll: true,
-    logo: '/imgs/lw-chart.png',
+    logo: '/imgs/lw-chart.svg',
     locales: {
       '/': {
         sidebar: 'auto',

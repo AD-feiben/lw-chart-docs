@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="400px" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="-4.62558186%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#6A8BAD" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(33.500000, 54.500000)">
+            <path d="M2,4 L2,290.217229 L331,290.217229 L331,4 C294.859422,157.737745 267.020961,234.606618 247.484615,234.606618 C212.402362,234.606618 197.946946,38.3033088 166.5,38.3033088 C136.130769,38.3033088 116.896923,234.606618 86.5276923,234.606618 C66.2815385,234.606618 38.105641,157.737745 2,4 Z" id="Path-2" fill="url(#linearGradient-1)"></path>
+            <path d="M4,4 C38.7822222,157.737745 67.008176,234.606618 88.6778612,234.606618 C121.173333,234.606618 134,38.4435437 166.5,38.4435437 C199,38.4435437 211.826667,234.606618 244.322139,234.606618 C265.991824,234.606618 294.217778,157.737745 329,4" id="Path" stroke="#6A8BAD" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle id="Oval" stroke="#6A8BAD" stroke-width="2" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" cx="87.5" cy="234.606618" r="4"></circle>
+            <circle id="Oval-Copy" stroke="#6A8BAD" stroke-width="2" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" cx="329" cy="4" r="4"></circle>
+            <circle id="Oval-Copy-3" stroke="#6A8BAD" stroke-width="2" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" cx="166.5" cy="38.3033088" r="4"></circle>
+            <circle id="Oval-Copy-4" stroke="#6A8BAD" stroke-width="2" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" cx="4" cy="4" r="4"></circle>
+            <circle id="Oval-Copy-2" stroke="#6A8BAD" stroke-width="2" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" cx="246.5" cy="234.606618" r="4"></circle>
+        </g>
+    </g>
+</svg>

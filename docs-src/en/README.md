@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /imgs/lw-chart.png
+heroImage: /imgs/lw-chart.svg
 heroText: lw-chart
 tagline: A lightweight chart implemented by canvas
 actionText: Get Started →

@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /imgs/lw-chart.png
+heroImage: /imgs/lw-chart.svg
 heroText: lw-chart
 tagline: 一个由canvas实现的轻量级图表
 actionText: 快速上手 →
