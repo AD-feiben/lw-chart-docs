@@ -29,6 +29,9 @@ chartHeight = canvasHeight - canvasPaddingTop - canvasPaddingBottom - titleBarHe
 | xAxisData      | x轴坐标数据                                                    | string[]                 | []               |
 | xAxisLength    | x轴坐标标注个数 xAxisData.length / xAxisLength >= 2 时有效 | number                   | 10               |
 | xAxisFormat    | x轴坐标标注格式化函数                                          | (val: string) => string; | --               |
+| showYAxisAuxiliaryLine(1.0.14)    | 显示 y 轴辅助线                                          | boolean | true               |
+| yAxisMinVal(1.0.14)    | y 轴标注最小值                                          | number | --               |
+| yAxisMaxVal(1.0.14)    | y 轴标注最大值                                          | number | --               |
 | yAxisWidth     | y轴宽度                                                        | number                   | 30               |
 | yAxisData      | y轴坐标数据(允许传入多组数据绘制)                              | number[][]               | []               |
 | yAxisLength    | y轴坐标标注个数                                                | number                   | 10               |

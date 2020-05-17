@@ -4,7 +4,8 @@
   "description": "Document of lw-chart",
   "main": "index.js",
   "scripts": {
-    "docs:deploy": "./deploy-docs.sh",
+    "build": "./build.sh",
+    "deploy": "./build.sh && ./deploy.sh",
     "docs:dev": "vuepress dev docs-src",
     "docs:build": "vuepress build docs-src",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,6 +18,7 @@
     "vuepress": "^1.4.1"
   },
   "dependencies": {
+    "lw-chart": "^1.0.15",
     "vuepress-plugin-run": "^1.0.1"
   }
 }

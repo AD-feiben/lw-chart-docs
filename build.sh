@@ -11,7 +11,9 @@ rm -rf lw-chart-docs
 
 mkdir lw-chart-docs
 
-cp -rf ~/test/lightweight-chart/dist lw-chart-docs/dist/
+npm install lw-chart
+
+cp -rf node_modules/lw-chart/dist lw-chart-docs/dist/
 cp -rf docs-src/.vuepress/dist lw-chart-docs/docs/
 mv docs-src/.vuepress/dist docs
 

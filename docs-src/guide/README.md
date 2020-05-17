@@ -21,6 +21,7 @@ lw-chart
 │   ├── Area.js
 │   ├── Axis.js
 │   ├── LWChart.js
+│   ├── index.common.js
 │   └── index.js
 ├── package.json
 ├── src
@@ -47,11 +48,15 @@ Axis 为坐标轴类，通过配置参数初始化 canvas 以及 chart 的尺寸
 
 Area 为实现类，将 Axis 类处理后的数据换算为坐标进行绘制。
 
+`import LWChart from 'lw-chart'` 默认指向 `dist/index.common.js`，该版本不支持直接在浏览器使用。
+
 ::: tip
 
 Area 类不满足需求时，可继承 LWChart 或 Axis 开发新的图表。
 
-其中 index.js 中包含 LWChart、Axis、Area 类，体积相对较大，尽量避免直接使用 index.js。
+其中 index.js 中包含 LWChart、Axis、Area 类，体积相对较大，利用 script 引用应尽量避免直接使用 index.js。
+
+在 webpack 项目中可以使用 `import LWChart, { Axis, Area } from 'lw-chart'`
 
 :::
 

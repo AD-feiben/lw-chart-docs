@@ -7,7 +7,7 @@
     <meta name="generator" content="VuePress 1.4.1">
     <link rel="icon" href="/lw-chart-docs/docs/imgs/lw-chart.svg">
     <meta name="description" content="一个由canvas实现的轻量级图表">
-    <link rel="preload" href="/lw-chart-docs/docs/assets/css/0.styles.8e2afe19.css" as="style"><link rel="preload" href="/lw-chart-docs/docs/assets/js/app.8e20404c.js" as="script"><link rel="preload" href="/lw-chart-docs/docs/assets/js/3.535033df.js" as="script"><link rel="preload" href="/lw-chart-docs/docs/assets/js/15.d8511fd0.js" as="script"><link rel="prefetch" href="/lw-chart-docs/docs/assets/js/10.8506a86e.js"><link rel="prefetch" href="/lw-chart-docs/docs/assets/js/11.e12f628d.js"><link rel="prefetch" href="/lw-chart-docs/docs/assets/js/12.64eb2fa9.js"><link rel="prefetch" href="/lw-chart-docs/docs/assets/js/13.37ad5979.js"><link rel="prefetch" href="/lw-chart-docs/docs/assets/js/14.7774d7c1.js"><link rel="prefetch" href="/lw-chart-docs/docs/assets/js/16.7e46b46c.js"><link rel="prefetch" href="/lw-chart-docs/docs/assets/js/2.5c861c96.js"><link rel="prefetch" href="/lw-chart-docs/docs/assets/js/4.53bfc010.js"><link rel="prefetch" href="/lw-chart-docs/docs/assets/js/5.c8f03852.js"><link rel="prefetch" href="/lw-chart-docs/docs/assets/js/6.6ef80b44.js"><link rel="prefetch" href="/lw-chart-docs/docs/assets/js/7.c6c40968.js"><link rel="prefetch" href="/lw-chart-docs/docs/assets/js/8.7a7258bc.js"><link rel="prefetch" href="/lw-chart-docs/docs/assets/js/9.24e607b3.js">
+    <link rel="preload" href="/lw-chart-docs/docs/assets/css/0.styles.8e2afe19.css" as="style"><link rel="preload" href="/lw-chart-docs/docs/assets/js/app.65eb7296.js" as="script"><link rel="preload" href="/lw-chart-docs/docs/assets/js/3.535033df.js" as="script"><link rel="preload" href="/lw-chart-docs/docs/assets/js/15.906e022e.js" as="script"><link rel="prefetch" href="/lw-chart-docs/docs/assets/js/10.ecf1df39.js"><link rel="prefetch" href="/lw-chart-docs/docs/assets/js/11.e12f628d.js"><link rel="prefetch" href="/lw-chart-docs/docs/assets/js/12.4099eb7b.js"><link rel="prefetch" href="/lw-chart-docs/docs/assets/js/13.96c0ca45.js"><link rel="prefetch" href="/lw-chart-docs/docs/assets/js/14.015943c3.js"><link rel="prefetch" href="/lw-chart-docs/docs/assets/js/16.7e46b46c.js"><link rel="prefetch" href="/lw-chart-docs/docs/assets/js/2.5c861c96.js"><link rel="prefetch" href="/lw-chart-docs/docs/assets/js/4.53bfc010.js"><link rel="prefetch" href="/lw-chart-docs/docs/assets/js/5.c8f03852.js"><link rel="prefetch" href="/lw-chart-docs/docs/assets/js/6.6ef80b44.js"><link rel="prefetch" href="/lw-chart-docs/docs/assets/js/7.bec79683.js"><link rel="prefetch" href="/lw-chart-docs/docs/assets/js/8.52a22d9d.js"><link rel="prefetch" href="/lw-chart-docs/docs/assets/js/9.24e607b3.js">
     <link rel="stylesheet" href="/lw-chart-docs/docs/assets/css/0.styles.8e2afe19.css">
   </head>
   <body>
@@ -50,6 +50,7 @@
 │   ├── Area.js
 │   ├── Axis.js
 │   ├── LWChart.js
+│   ├── index.common.js
 │   └── index.js
 ├── package.json
 ├── src
@@ -68,7 +69,7 @@
     └── utils
         ├── index.d.ts
         └── interfaces.d.ts
-</code></pre></div><p>LWChart 为基类，主要用于创建 canvas 标签、获取 dpi、提供基本的绘制方法等。</p> <p>Axis 为坐标轴类，通过配置参数初始化 canvas 以及 chart 的尺寸、初始化图表数据、 实现坐标轴的绘制等。</p> <p>Area 为实现类，将 Axis 类处理后的数据换算为坐标进行绘制。</p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>Area 类不满足需求时，可继承 LWChart 或 Axis 开发新的图表。</p> <p>其中 index.js 中包含 LWChart、Axis、Area 类，体积相对较大，尽量避免直接使用 index.js。</p></div> <h2 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">yarn</span> <span class="token function">add</span> lw-chart
+</code></pre></div><p>LWChart 为基类，主要用于创建 canvas 标签、获取 dpi、提供基本的绘制方法等。</p> <p>Axis 为坐标轴类，通过配置参数初始化 canvas 以及 chart 的尺寸、初始化图表数据、 实现坐标轴的绘制等。</p> <p>Area 为实现类，将 Axis 类处理后的数据换算为坐标进行绘制。</p> <p><code>import LWChart from 'lw-chart'</code> 默认指向 <code>dist/index.common.js</code>，该版本不支持直接在浏览器使用。</p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>Area 类不满足需求时，可继承 LWChart 或 Axis 开发新的图表。</p> <p>其中 index.js 中包含 LWChart、Axis、Area 类，体积相对较大，利用 script 引用应尽量避免直接使用 index.js。</p> <p>在 webpack 项目中可以使用 <code>import LWChart, { Axis, Area } from 'lw-chart'</code></p></div> <h2 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">yarn</span> <span class="token function">add</span> lw-chart
 
 <span class="token comment"># npm install lw-chart --save</span>
 </code></pre></div><h2 id="在-webpack-项目使用"><a href="#在-webpack-项目使用" class="header-anchor">#</a> 在 webpack 项目使用</h2> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> Area <span class="token keyword">from</span> <span class="token string">'lw-chart/dist/Area.js'</span><span class="token punctuation">;</span>
@@ -83,6 +84,6 @@
       </a>
       →
     </span></p></div> </main></div><div class="global-ui"><!----></div></div>
-    <script src="/lw-chart-docs/docs/assets/js/app.8e20404c.js" defer></script><script src="/lw-chart-docs/docs/assets/js/3.535033df.js" defer></script><script src="/lw-chart-docs/docs/assets/js/15.d8511fd0.js" defer></script>
+    <script src="/lw-chart-docs/docs/assets/js/app.65eb7296.js" defer></script><script src="/lw-chart-docs/docs/assets/js/3.535033df.js" defer></script><script src="/lw-chart-docs/docs/assets/js/15.906e022e.js" defer></script>
   </body>
 </html>
