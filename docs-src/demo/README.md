@@ -49,9 +49,7 @@ export default {
     }
   },
   mounted () {
-    this.$nextTick(() => {
-      this.run();
-    });
+    this.run();
   }
 }
 </script>
@@ -110,9 +108,7 @@ export default {
     }
   },
   mounted () {
-    this.$nextTick(() => {
-      this.run();
-    });
+    this.run();
   }
 }
 </script>
@@ -175,9 +171,7 @@ export default {
     }
   },
   mounted () {
-    this.$nextTick(() => {
-      this.run();
-    });
+    this.run();
   }
 }
 </script>
@@ -237,9 +231,7 @@ export default {
     }
   },
   mounted () {
-    this.$nextTick(() => {
-      this.run();
-    });
+    this.run();
   }
 }
 </script>
@@ -301,9 +293,7 @@ export default {
     }
   },
   mounted () {
-    this.$nextTick(() => {
-      this.run();
-    });
+    this.run();
   }
 }
 </script>
@@ -368,9 +358,7 @@ export default {
     }
   },
   mounted () {
-    this.$nextTick(() => {
-      this.run();
-    });
+    this.run();
   }
 }
 </script>
@@ -433,9 +421,7 @@ export default {
     }
   },
   mounted () {
-    this.$nextTick(() => {
-      this.run();
-    });
+    this.run();
   }
 }
 </script>
@@ -486,20 +472,18 @@ export default {
         },
         xAxisData,
         yAxisData,
-        areaLineColor: ['rgba(255, 107, 129,1.0)', 'rgba(236, 204, 104,1.0)'],
-        areaDotStorkColor: ['rgba(255, 107, 129,1.0)', 'rgba(236, 204, 104,1.0)'],
-        areaActiveDotFillColor: ['rgba(255, 107, 129,0.3)', 'rgba(236, 204, 104,0.3)'],
-        areaStartColor: ['rgba(255, 107, 129,1.0)', 'rgba(236, 204, 104,1.0)'],
-        areaEndColor: ['rgba(255, 107, 129,1.0)', 'rgba(236, 204, 104,1.0)']
+        areaLineColor: ['rgba(255, 107, 129,1.0)', 'rgba(46, 213, 115,1.0)'],
+        areaDotStorkColor: ['rgba(255, 107, 129,1.0)', 'rgba(46, 213, 115,1.0)'],
+        areaActiveDotFillColor: ['rgba(255, 107, 129,0.3)', 'rgba(46, 213, 115,0.3)'],
+        areaStartColor: ['rgba(255, 107, 129,1.0)', 'rgba(46, 213, 115,1.0)'],
+        areaEndColor: ['rgba(255, 107, 129,1.0)', 'rgba(46, 213, 115,1.0)']
       };
 
       const lineChart = new Area(document.querySelector('#chart'), config);
     }
   },
   mounted () {
-    this.$nextTick(() => {
-      this.run();
-    });
+    this.run();
   }
 }
 </script>
@@ -515,11 +499,11 @@ export default {
 ```ts
 const yAxisData = [ [ 7, 10, 6, 8, 12, 7 ], [ 2, 5, 3, 6, 8, 5 ] ];
 
-areaLineColor: ['rgba(255, 107, 129,1.0)', 'rgba(236, 204, 104,1.0)'],
-areaDotStorkColor: ['rgba(255, 107, 129,1.0)', 'rgba(236, 204, 104,1.0)'],
-areaActiveDotFillColor: ['rgba(255, 107, 129,0.3)', 'rgba(236, 204, 104,0.3)'],
-areaStartColor: ['rgba(255, 107, 129,1.0)', 'rgba(236, 204, 104,1.0)'],
-areaEndColor: ['rgba(255, 107, 129,1.0)', 'rgba(236, 204, 104,1.0)']
+areaLineColor: ['rgba(255, 107, 129,1.0)', 'rgba(46, 213, 115,1.0)'],
+areaDotStorkColor: ['rgba(255, 107, 129,1.0)', 'rgba(46, 213, 115,1.0)'],
+areaActiveDotFillColor: ['rgba(255, 107, 129,0.3)', 'rgba(46, 213, 115,0.3)'],
+areaStartColor: ['rgba(255, 107, 129,1.0)', 'rgba(46, 213, 115,1.0)'],
+areaEndColor: ['rgba(255, 107, 129,1.0)', 'rgba(46, 213, 115,1.0)']
 ```
 
 
@@ -591,9 +575,7 @@ export default {
     }
   },
   mounted () {
-    this.$nextTick(() => {
-      this.run();
-    });
+    this.run();
   }
 }
 </script>
