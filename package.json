@@ -18,7 +18,7 @@
     "vuepress": "^1.4.1"
   },
   "dependencies": {
-    "lw-chart": "^1.0.15",
+    "lw-chart": "^1.1.5",
     "vuepress-plugin-run": "^1.0.1"
   }
 }
