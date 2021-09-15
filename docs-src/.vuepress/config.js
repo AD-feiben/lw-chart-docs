@@ -113,7 +113,8 @@ module.exports = {
     [
       'run',
       {
-        jsLabs: ['https://lw-chart-docs.now.sh/lw-chart-docs/dist/Area.js'],
+        // jsLabs: ['https://lw-chart-docs.now.sh/lw-chart-docs/dist/Area.js'],
+        jsLabs: ['https://cdn.jsdelivr.net/gh/ad-feiben/lw-chart/dist/Area.js'],
         reverse: true,
       }
     ]
